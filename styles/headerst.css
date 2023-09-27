@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:before,
+*:after{
+    padding:0;
+    margin:0;
+    box-sizing:  border-box;
+}
+body{
+
+}
+
+.anch1{
+    position:relative;
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    
+    
+}
+.anch1:after{
+    content: "";
+    position: absolute;
+    background-color: #171C8F;
+    
+    height: 3px;
+    left:0;
+    bottom:-6px;
+    
+    transform: scale(0,1);
+    transition:transform 0.3s ease;
+}
+
+.anch1:hover:after{
+    transform: scale(1,1);
+    width: 100%;
+
+}
